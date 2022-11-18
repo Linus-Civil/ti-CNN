@@ -495,7 +495,7 @@ cnn = cnn_network(28,28)
 opts = train_opts()
 opts.numepochs = 1
 opts.alpha = 0.03
-cnntrain(cnn,train_images[:30000,:],train_labels[:30000,:],opts,30000)
+cnntrain(cnn,train_images[:5000,:],train_labels[:5000,:],opts,5000) # train cnn by 5000 images
 
 @ti.kernel
 def max_index(f:ti.template()) -> int:
@@ -526,7 +526,7 @@ def cnntest(cnn,inputdata,outputdata,tst_num):
     print("incorrect num:{}".format(incorrectnum))
     return incorrectnum/tst_num
 
-unsuccess = cnntest(cnn,train_images[30000:,:,:],train_labels[30000:,:],30000)
+unsuccess = cnntest(cnn,train_images[30000:40000,:,:],train_labels[30000:40000,:],10000) # test cnn by 10000 images
 print("成功率：{}".format((1-unsuccess)*100))
 
 
