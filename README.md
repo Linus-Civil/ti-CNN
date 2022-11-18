@@ -11,9 +11,13 @@ python3 ti_cnn.py
 
 ## Note
 - Dataset: MNIST handwritten digit database
-- I selected two subsets from the original training set as the training set and test set for this code. Currently, the accuracy on the test set is about 60%.
-- Expanding the training set will reduce the accuracy of the test set, which may be caused by the following two aspects
-	- There are bugs in the code
-	- Over-fitting
-- This repo is still under development and is for reference only
+- Relationship between accuracy of CNN on test set and size of training set
+	- 1000 training images &rarr; 81.77%
+	- 2000 training images &rarr; 86.17%
+	- 3000 training images &rarr;  89.07%
+	- 4000 training images &rarr; 84.15%
+	- 5000 training images  &rarr; 91.88%
+	- 10000  training images  &rarr; 91.98%
+	- 60000  training images  &rarr; 86.60%
+- I am not a major in artificial intelligence, and only show what I just learned. The prediction accuracy on the test set is not bad, but there may be BUG in the code, for reference only.
 
