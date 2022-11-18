@@ -499,9 +499,11 @@ cnntrain(cnn,train_images[:5000,:],train_labels[:5000,:],opts,5000) # train cnn 
 
 @ti.kernel
 def max_index(f:ti.template()) -> int:
+    lenth = f.shape[0]
     max_index = 0
     max_value = 0.0
-    for i in f:
+    ti.loop_config(serialize=True)
+    for i in range(lenth):
         if f[i] > max_value:
             max_value = f[i]
             max_index = i
