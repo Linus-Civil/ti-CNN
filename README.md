@@ -11,7 +11,7 @@ python3 ti_cnn.py
 
 ## Note
 - Dataset: MNIST handwritten digit database
-- Relationship between accuracy of CNN on test set and size of training set
+- Relationship between accuracy of CNN on test set and size of training set. The specific accuracy is related to the computing backend, and the following results are based on the CUDA backend.
 	- 1000 training images &rarr; 81.77%
 	- 2000 training images &rarr; 86.17%
 	- 3000 training images &rarr;  89.07%

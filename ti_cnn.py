@@ -520,7 +520,7 @@ cnn = cnn_network(28,28)
 opts = train_opts()
 opts.numepochs = 1
 opts.alpha = 0.03
-cnntrain(cnn,train_images[:2000,:,:],train_labels[:2000,:],opts,2000)
+cnntrain(cnn,train_images[:5000,:,:],train_labels[:5000,:],opts,5000)
 
 @ti.kernel
 def max_index(f:ti.template()) -> int:
