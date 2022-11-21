@@ -19,5 +19,5 @@ python3 ti_cnn.py
 	- 5000 training images  &rarr; 91.88%
 	- 10000  training images  &rarr; 91.98%
 	- 60000  training images  &rarr; 86.60%
-- I am not a major in artificial intelligence, and only show what I just learned. The prediction accuracy on the test set is not bad, but there may be BUG in the code, for reference only.
+- Not major in artificial intelligence, and only try what I just learned. The prediction accuracy on the test set is not bad, but there may be BUG in the code, for reference only.
 
